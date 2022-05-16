@@ -125,9 +125,9 @@ function atirar(dt)
 function inimigo(dt)
   --Função Inimigos e suas disposições na tela
    tmpInimigo = tmpInimigo - (1 * dt)
-   if pontos > 5 then
-    tmpInimigo = tmpInimigo - (5 * dt)
-    tmpAtirar = tmpAtirar - (5 * dt)
+   if pontos > 30 then
+    tmpInimigo = tmpInimigo - (2 * dt)
+    tmpAtirar = tmpAtirar - (2 * dt)
 
   end
    if tmpInimigo < 0 then
@@ -213,7 +213,8 @@ function love.draw()
   if contVivo then
     love.graphics.draw(player.imagem, player.pos_pl_x, player.pos_pl_y, 0, 1, 1, player.imagem:getWidth() / 2, player.imagem:getHeight() / 2)
   else
-    love.graphics.print ("Pressione 'ENTER' para reinicar.", larguraTela / 3, alturaTela / 2)
+    love.graphics.print ("Seu record: ".. pontos.." pontos", larguraTela / 3, alturaTela / 3)
+    love.graphics.print ("Pressione Enter e tente novamente", larguraTela / 5, alturaTela / 2.8)
   end
   --imprimi jogador, fim de jogo e reinicio
   
