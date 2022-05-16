@@ -124,9 +124,9 @@ function atirar(dt)
   
 function inimigo(dt)
   --Função Inimigos e suas disposições na tela
-   tmpInimigo = tmpInimigo - (1 * dt)
+   tmpInimigo = tmpInimigo - (0.5 * dt)
    if pontos > 30 then
-    tmpInimigo = tmpInimigo - (2 * dt)
+    tmpInimigo = tmpInimigo - (1 * dt)
     tmpAtirar = tmpAtirar - (2 * dt)
 
   end
