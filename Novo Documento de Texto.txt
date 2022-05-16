@@ -1,0 +1,4 @@
+audioDisp = love.audio.newSource("audio/disparo.wav", "static")               -- arq de audio do disparos
+  explosaoPlay = love.audio.newSource("audio/playexplosao.wav", "static")       -- arq de audio da explosao da nave
+  explosaoInim = love.audio.newSource("audio/inimigoexplosao.wav", "static")    -- arq de audio da explosão do inimigo 
+  musicaFundo = love.audio.newSource("audio/musicafundo.wav", "stream")         -- arq de audio da musica de fundo
