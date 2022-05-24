@@ -45,7 +45,7 @@ function love.load()
   --Informações sobre o cenário
   
   --Informações sobre pontuação
-  fonte = love.graphics.newImageFont("fonte.png", " abcdefghijklmnopqrstuvwxyz".."ABCDEFGHIJKLMNOPQRSTUVWXYZ0" .."123456789.,!?-+/():;%&`´*#=[]¨")
+  fonte = love.graphics.newFont("Herculanum.ttf")
   --Informações sobre pontuação
   
   --Informações sobre o audio jogo
@@ -182,7 +182,7 @@ function movfundo(dt) --movimentação do plano de fundo
 end
 
 function reincia()
-  --reiniciar o jogo, zera as tabelas, posiciona a nave novamente na posição inicial do jogo, zera os pontos
+  --reiniciar o jogo, zera as tabelas, posiciona o rato novamente na posição inicial do jogo, zera os pontos
   if not contVivo and love.keyboard.isDown('return') then
     tiros = {}
     inimigos = {}
@@ -206,9 +206,10 @@ function love.draw()
   --Imprime o cenario
   
   --pontuação
-  love.graphics.setFont(fonte) --carrega a imagem da fonte
+  love.graphics.setFont(fonte) --carrega a fonte
   love.graphics.print("Pontuacao: ".. pontos, 10, 10) --o pontuação e suas posições na tela
   --pontuação
+
   --imprime jogador, fim de jogo e reinicio
   if contVivo then
     love.graphics.draw(player.imagem, player.pos_pl_x, player.pos_pl_y, 0, 1, 1, player.imagem:getWidth() / 2, player.imagem:getHeight() / 2)
