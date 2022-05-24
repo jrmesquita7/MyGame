@@ -6,7 +6,7 @@ function love.conf(t)
   t.externalstorage = false
   t.gammacorrect = false
   
-  t.window.title = "Capitã Vacina"
+  t.window.title = "The revenge of rome"
   t.window.icon = nil
   t.window.width = 475
   t.window.height = 700
