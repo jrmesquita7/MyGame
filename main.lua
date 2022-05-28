@@ -15,7 +15,7 @@ veloc = 200
 function love.load()
   --Informações dos disparos
   atira = true
-  dlDisp = 0.5
+  dlDisp = 0.8
   tmpAtirar = dlDisp
   tiros = {}
   imagemTiro = love.graphics.newImage("luva.png")
@@ -26,16 +26,15 @@ function love.load()
   tmpInimigo = dlInimigo
   imagemInimigo = love.graphics.newImage("gato.png") 
   inimigos = {}
-  --Informações do Inimigo
-  
+
   --Informações sobre vida e pontos
   contVivo = true
   pontos = 0
   --Informações sobre vida e pontos
   
   --Informações sobre o cenário
-  cenario = love.graphics.newImage("cenario.png")
-  cenarioCont = love.graphics.newImage("cenario.png") --cria o background infinito
+  cenario = love.graphics.newImage("background.png")
+  cenarioCont = love.graphics.newImage("background.png") --cria o background infinito
   fundo = {
   x = 0,                    -- posição do primeiro background
   y = 0,                    -- posição do primeiro background
@@ -58,7 +57,7 @@ function love.load()
   --Informações sobre o audio jogo
   
   --atribui uma variável a imagem do jogador
- player.imagem = love.graphics.newImage("test.png")
+ player.imagem = love.graphics.newImage("rato.png")
  --atribui uma variável a imagem do jogador
 end
 
