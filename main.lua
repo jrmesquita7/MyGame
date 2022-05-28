@@ -26,6 +26,7 @@ function love.load()
   tmpInimigo = dlInimigo
   imagemInimigo = love.graphics.newImage("gato.png") 
   inimigos = {}
+  --Informações do Inimigo
 
   --Informações sobre vida e pontos
   contVivo = true
