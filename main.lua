@@ -31,6 +31,7 @@ function love.load()
   --Informações sobre vida e pontos
   contVivo = true
   pontos = 0
+  nivel = 1
   --Informações sobre vida e pontos
   
   --Informações sobre o cenário
@@ -130,7 +131,13 @@ function inimigo(dt)
    if pontos > 30 then
     tmpInimigo = tmpInimigo - (1 * dt)
     tmpAtirar = tmpAtirar - (2 * dt)
+    nivel = 2
 
+  end
+  if pontos > 60 then
+    tmpInimigo = tmpInimigo - (2 * dt)
+    tmpAtirar = tmpAtirar - (3 * dt)
+    nivel = 3
   end
    if tmpInimigo < 0 then
      tmpInimigo = dlInimigo
@@ -211,6 +218,7 @@ function love.draw()
   love.graphics.setFont(fonte) --carrega a fonte
   love.graphics.print("Pontuacao: ".. pontos, 10, 10) --o pontuação e suas posições na tela
   --pontuação
+  love.graphics.print("Level: ".. nivel, 10, 30)
 
   --imprime jogador, fim de jogo e reinicio
   if contVivo then

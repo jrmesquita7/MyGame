@@ -1,2 +1,2 @@
 @ECHO OFF	
-start  "" "C:\Program Files\LOVE\love"  .
+start  "" "junior@junior-Inspiron-3480:~/MyGame"  .
