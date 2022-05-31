@@ -50,11 +50,13 @@ function love.load()
   
   --Informações sobre o audio jogo
   audioDisp = love.audio.newSource("audio/disparoluva.mp3", "static")               -- arq de audio do disparos
-  explosaoPlay = love.audio.newSource("audio/playexplosao.wav", "static")       -- arq de audio da explosao da nave
-  explosaoInim = love.audio.newSource("audio/miauexplosao.mp3", "static")    -- arq de audio da explosão do inimigo 
+  audioDisp: setVolume(0.5)                                                         -- volume do audio 
+  explosaoPlay = love.audio.newSource("audio/morte_gato.mp3", "static")       -- arq de audio da explosao da nave
+  explosaoInim = love.audio.newSource("audio/Miado.mp3", "static")    -- arq de audio da explosão do inimigo 
   musicaFundo = love.audio.newSource("audio/fundo.mp3", "stream")         -- arq de audio da musica de fundo
   musicaFundo: play()   --função para tocar a musica de fundo desde o começo do jogo
   musicaFundo: setLooping(true)  --função que faz a musica de fundo recomeçar ao termino
+  musicaFundo: setVolume(0.3)                                                        -- volume do audio  
   --Informações sobre o audio jogo
   
   --atribui uma variável a imagem do jogador
