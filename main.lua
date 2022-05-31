@@ -45,7 +45,7 @@ function love.load()
   --Informações sobre o cenário
   
   --Informações sobre pontuação
-  fonte = love.graphics.newFont("Herculanum.ttf")
+  fonte = love.graphics.newFont("PressStart2.ttf")
   --Informações sobre pontuação
   
   --Informações sobre o audio jogo
@@ -216,8 +216,8 @@ function love.draw()
   if contVivo then
     love.graphics.draw(player.imagem, player.pos_pl_x, player.pos_pl_y, 0, 1, 1, player.imagem:getWidth() / 2, player.imagem:getHeight() / 2)
   else
-    love.graphics.print ("Seu record: ".. pontos.." pontos", larguraTela / 3, alturaTela / 3)
-    love.graphics.print ("Pressione Enter e tente novamente", larguraTela / 5, alturaTela / 2.8)
+    love.graphics.print ("Seu record: ".. pontos.." pontos", larguraTela / 4.8, alturaTela / 3)
+    love.graphics.print ("Pressione Enter e tente novamente", larguraTela / 10, alturaTela / 2.8)
   end
   --imprimi jogador, fim de jogo e reinicio
   
