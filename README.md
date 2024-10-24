@@ -1,8 +1,14 @@
 ---
 
-# Gato Luva de Pedreiro
+# The Revenge of Rome
+Em um certo dia muito importante na cidade de Roma, o rei se vestiu com a
+sua roupa mais brilhante que possuía, no mundo não existia nenhuma igual. E
+aconteceu que em um determinado momento um exercito de ratos invadiu a festa
+que estava acontecendo e o líder desse exercito muito conhecido no reino teve a
+audacia de rasgar a roupa do rei, deixando-o muito enfurecido, nesse momento uma
+guerra contra esse rato e todo o seu exercito foi iniciada, onde o proprio rei saiu para
+matar o maldito rato que roeu a roupa do rei de Roma.
 
-Este é um jogo 2D desenvolvido em **Lua** usando o framework **Love2D**. O jogador controla um rato que precisa se defender de inimigos (gatos) atirando neles com luvas. O jogo possui vários níveis de dificuldade que aumentam conforme a pontuação do jogador.
 
 ## Como Jogar
 
